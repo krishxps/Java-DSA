@@ -43,7 +43,6 @@ public class calc{
         String s = sc.next();
         int second = sc.nextInt();
         
-
         System.out.print("Result: ");
         switch(s){
             case "*":
