@@ -1,7 +1,13 @@
+// Importing Java scanner function to take inputs from user
+import java.util.*;
+
 public class test{
     public static void main(String argc[]){
-        for(int i = 0 ; i < 10 ; i++){
-            System.out.println("Hello World");
-        }
+        System.out.print("Your Name: ");
+        // Java scanner function to take inputs from user
+        Scanner sc = new Scanner(System.in);
+        
+        String s = sc.next();
+        System.out.println("Hello, " + s);
     }
 }
