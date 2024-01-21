@@ -38,7 +38,7 @@ public class calc{
     public static void main(String argc[]){
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Input Two Values: ");
+        System.out.print("Input Two Values with Operation (Ex: 2 * 2): ");
         int first = sc.nextInt();
         String s = sc.next();
         int second = sc.nextInt();
