@@ -2,7 +2,7 @@ import java.util.*;
 
 public class calc{
     public static void main(String argc[]){
-        
+
         Scanner sc = new Scanner(System.in);
         System.out.print("Input Two Values: ");
         int first = sc.nextInt();
@@ -11,6 +11,7 @@ public class calc{
         System.out.print("Input Operation: ");
         String s = sc.next();
 
+        System.out.print("Result: ");
         switch(s){
             case "*":
                 System.out.println(first * second);
