@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class test{
+public class sumof2{
     public static void main(String argc[]){
 
         System.out.print("A and B values: ");
