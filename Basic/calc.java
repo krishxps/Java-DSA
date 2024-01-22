@@ -1,4 +1,4 @@
-// import java.util.*;
+// import java.util.Scanner;
 
 // public class calc{
 //     public static void main(String argc[]){
@@ -32,7 +32,7 @@
 //     }
 // } 
 
-import java.util.*;
+import java.util.Scanner;
 
 public class calc{
     public static void main(String argc[]){
