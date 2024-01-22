@@ -2,12 +2,8 @@ import java.util.Scanner;
 
 public class factorial {
     public static void main(String[] args) {
-
         int num = getInput();
-
-        long fac = factorialFind(num);
-        System.out.println("Factorial is: " + fac);
-        
+        System.out.println("Factorial is: " + factorialFind(num));
     }
 
     public static long factorialFind(int number) {
@@ -21,7 +17,6 @@ public class factorial {
         }
         return result;
     }
-
 
     public static int getInput() {
         Scanner sc = new Scanner(System.in);
