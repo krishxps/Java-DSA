@@ -8,15 +8,25 @@ public class revnum {
         int num = sc.nextInt();
         sc.close();
 
-        int temp = 0;
-        System.out.print("Reversed Num: ");
+        // // Rev Print
+        // int temp = 0;
+        // System.out.print("Reversed Num: ");
         
+        // while (num > 0) {
+        //     temp = num % 10;
+        //     System.out.print(temp);
+        //     num = num / 10;
+        // }
+        // System.out.println();
+
+        // Rev Variable Value 
+        int rev = 0;
+
         while (num > 0) {
-            temp = num % 10;
-            System.out.print(temp);
+            rev = (rev * 10 ) + num % 10;
             num = num / 10;
         }
-        System.out.println();
-        
+        num = rev;
+        System.out.println("Reversed Num: " + rev);
     }
 }
