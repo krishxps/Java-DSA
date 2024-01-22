@@ -6,8 +6,8 @@ public class gameGuess {
         Scanner sc = new Scanner(System.in);
         Random rn = new Random();
 
-        int numToGuess = rn.nextInt(100);
-        int guessCount = 0;
+        int numToGuess = rn.nextInt(101);
+        int guessCount = 1;
 
         do {
             System.out.print("Guess any number: ");
@@ -16,10 +16,10 @@ public class gameGuess {
             System.out.println();
 
             if (numToGuess == usrGuess) {
-                System.out.println(" ________________________ ");
+                System.out.println("+________________________+");
                 System.out.println("| That's Right Baby Dall |");
                 System.out.println("| You took "+ guessCount+ " Chance      |");
-                System.out.println(" ------------------------ ");
+                System.out.println("+------------------------+");
                 dragon();
                 break;
             } else if (numToGuess > usrGuess) {
