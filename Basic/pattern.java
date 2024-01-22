@@ -48,11 +48,33 @@ public class pattern{
         //     System.out.println();
         // }
 
-        // //Half pyramid
+        // //Half pyramid output:
+        // 1
+        // 12
+        // 123
+        // 1234
+
         // int n = 4;
         // for (int line = 0; line < n; line++) {
         //     for(int star = 0; star <= line ;star++){
         //         System.out.print(star + 1);
+        //     }
+        //     System.out.println();
+        // }
+
+        // Character Pattern
+        // OUTPUT: 
+        // A
+        // BC
+        // DEF
+        // GHIJ
+
+        // int n = 4;
+        // char A = 'A';
+        // for (int line = 0; line < n; line++) {
+        //     for(int star = 0; star <= line ;star++){
+        //         System.out.print(A);
+        //         A++;
         //     }
         //     System.out.println();
         // }
