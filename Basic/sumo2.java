@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class sumof2{
+public class sumo2{
     public static void main(String argc[]){
 
         System.out.print("A and B values: ");
@@ -9,7 +9,8 @@ public class sumof2{
 
         int first = sc.nextInt();
         int second = sc.nextInt();
-
+        
+        sc.close();
         System.out.println(first + second);
     }
 }

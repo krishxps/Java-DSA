@@ -7,7 +7,8 @@ public class areaofcir{
         float pi = 3.14f;
         System.out.print("Enter Radios: ");
         float rad = sc.nextFloat();
-
+        
+        sc.close();
         System.out.println((pi * rad * rad));
     }
 }
