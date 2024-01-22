@@ -16,6 +16,7 @@ public class pattern{
         //     System.out.println();
         // }
         // <---------------------------------------------------->
+
         // OUTPUT:
         // *****
         // ****
@@ -47,6 +48,7 @@ public class pattern{
         //     }
         //     System.out.println();
         // }
+        // <---------------------------------------------------->
 
         // //Half pyramid output:
         // 1
@@ -61,6 +63,7 @@ public class pattern{
         //     }
         //     System.out.println();
         // }
+        // <---------------------------------------------------->
 
         // Character Pattern
         // OUTPUT: 
@@ -78,5 +81,6 @@ public class pattern{
         //     }
         //     System.out.println();
         // }
+        // <---------------------------------------------------->
     }
 }
