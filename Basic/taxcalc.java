@@ -9,17 +9,20 @@ public class taxcalc {
         scanner.close();
         
         int tax = 0;
-        
+        int taxAm = 0;
+
         if (income < 500000) {
             ; // Nothing to do
         } else if (income < 1000000) { 
             tax = 20;
-            income = (int) (income - (income * 0.20)); 
+            taxAm = (int) (income * 0.20);
+            income = (int) (income - taxAm);
         } else {
             tax = 30;
-            income = (int) (income - (income * 0.30)); 
+            taxAm = (int) (income * 0.30);
+            income = (int) (income - taxAm); 
         }
         
-        System.out.println("Government tax is "+ tax +"%, so your annual income after tax is " + income);
+        System.out.println("Government tax is "+ tax +"% ("+ taxAm +"$), so your annual income after tax is " + income);
     }
 }
