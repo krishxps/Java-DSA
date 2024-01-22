@@ -28,7 +28,7 @@ public class gameGuess {
             System.out.println("Guess count:" + guessCount + "\n");
         }while(true);
         
-        System.out.println("You took " + guessCount + " Chance" );
+        System.out.println("You took " + guessCount + " Chance\n" );
         sc.close();
     }
 }
