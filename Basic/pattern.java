@@ -31,5 +31,20 @@ public class pattern{
         //     System.out.println();
         // }
         // <---------------------------------------------------->
+
+        // Inverted Star Pattern
+        // ****
+        // ***
+        // **
+        // *
+
+        // // Outer loop Number of lines = 4
+        // // inner loop = value of lines
+        // for (int line = 1; line <= 4; line++) {
+        //     for(int star = 0; star <= (4 - line); star++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        }
     }
 }
