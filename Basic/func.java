@@ -1,8 +1,16 @@
+import java.util.Scanner;
+
 public class func {
     public static void main(String[] args) {
-        int first = 10;
-        int second = 12;
+        Scanner sc = new Scanner(System.in);
         int sum = 0;
+        
+        System.out.print("FIRST NUMBER : ");
+        int first = sc.nextInt();
+        System.out.print("SECOND NUMBER : ");
+        int second = sc.nextInt();
+
+        sc.close();
         
         for (int i = 0; i < 10; i++) {
             sum = sum(first,second);
