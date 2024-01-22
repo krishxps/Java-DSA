@@ -26,6 +26,7 @@ public class revnum {
             rev = (rev * 10 ) + num % 10;
             num = num / 10;
         }
+        
         num = rev;
         System.out.println("Reversed Num: " + rev);
     }
