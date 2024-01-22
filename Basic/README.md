@@ -6,4 +6,5 @@
   <li>Conditional Statements</li>
   <li>IF else flow controls</li>
   <li>Other Intermediate Java things</li>
+  <li>Basic And Advance Loop Patterns</li>
 </ul>
