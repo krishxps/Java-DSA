@@ -5,6 +5,7 @@ public class leapyear {
         Scanner sc = new Scanner(System.in);
         System.out.print("ENTER YEAR TO CHECK THIS IS LEAP YEAR OR NOT: ");
         int leap = sc.nextInt();
+        sc.close();
         boolean isLeapYear = false;
 
         if (leap % 4 == 0) {
@@ -15,6 +16,6 @@ public class leapyear {
 
         String s = isLeapYear? " ": " NOT ";
         System.out.println("THIS IS" + s +"LEAP YEAR");
-        sc.close();
+        
     }
 }
