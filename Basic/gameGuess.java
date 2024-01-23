@@ -16,7 +16,7 @@ public class gameGuess {
             System.out.println();
 
             if (numToGuess == usrGuess) {
-                System.out.println("+________________________+");
+                System.out.println("+------------------------+");
                 System.out.println("| That's Right Baby Dall |");
                 System.out.println("| You took "+ guessCount+ " Chance      |");
                 System.out.println("+------------------------+");
@@ -24,18 +24,20 @@ public class gameGuess {
                 break;
             } else if (numToGuess > usrGuess) {
                 System.out.println("Think about bigger Number");
-                System.out.println("Guess count:" + guessCount + "\n");
+                guessPrint(guessCount);
                 guessCount++;
             } else if (numToGuess < usrGuess) {
                 System.out.println("Think about smaller Number");
+                guessPrint(guessCount);
                 guessCount++;
-                System.out.println("Guess count:" + guessCount + "\n");
             }
         } while (true);
 
         sc.close();
     }
-
+    public static void guessPrint(int guessCount){
+        System.out.println("Guess count:" + guessCount + "\n");
+    }
     public static void dragon() {
         System.out.println("      \\                    / \\  //\\");
         System.out.println("       \\    |\\___/|      /   \\//  \\\\");
