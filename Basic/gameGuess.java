@@ -10,26 +10,36 @@ public class gameGuess {
         int guessCount = 1;
 
         do {
-            System.out.print("Guess any number: ");
-            int usrGuess = sc.nextInt();
-
-            System.out.println();
-
-            if (numToGuess == usrGuess) {
-                System.out.println("+------------------------+");
-                System.out.println("| That's Right Baby Dall |");
-                System.out.println("| You took " + guessCount + " Chance      |");
-                System.out.println("+------------------------+");
-                dragon();
+            try {
+                System.out.print("Guess any number: ");
+                int usrGuess = sc.nextInt();
+                if(usrGuess < 101 && usrGuess > -1){
+                    System.out.println();
+    
+                    if (numToGuess == usrGuess) {
+                        System.out.println("+------------------------+");
+                        System.out.println("| That's Right Baby Dall |");
+                        System.out.println("| You took " + guessCount + " Chance      |");
+                        System.out.println("+------------------------+");
+                        dragon();
+                        break;
+                    } else if (numToGuess > usrGuess) {
+                        System.out.println("Think about bigger Number");
+                    } else if (numToGuess < usrGuess) {
+                        System.out.println("Think about smaller Number");
+                    }
+    
+                    System.out.println("Guess count:" + guessCount + "\n");
+                    guessCount++;
+                }
+                else{
+                    System.out.println("ERROR: INVALID INPUT MORON\n");
+                }
+            } catch (Exception e) {
+                System.out.println("ERROR: INT BOUND SURPASSED\n");
                 break;
-            } else if (numToGuess > usrGuess) {
-                System.out.println("Think about bigger Number");
-            } else if (numToGuess < usrGuess) {
-                System.out.println("Think about smaller Number");
             }
-            
-            System.out.println("Guess count:" + guessCount + "\n");
-            guessCount++;
+
         } while (true);
 
         sc.close();
