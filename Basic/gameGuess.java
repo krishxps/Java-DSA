@@ -38,20 +38,20 @@ public class gameGuess {
 
     public static void dragon() {
         System.out.println("      \\                    / \\  //\\");
-                System.out.println("       \\    |\\___/|      /   \\//  \\\\");
-                System.out.println("            /0  0  \\__  /    //  | \\ \\    ");
-                System.out.println("           /     /  \\/_/    //   |  \\  \\  ");
-                System.out.println("           @_^_@'/   \\/_   //    |   \\   \\ ");
-                System.out.println("           //_^_/     \\/_ //     |    \\    \\");
-                System.out.println("        ( //) |        \\///      |     \\     \\");
-                System.out.println("      ( / /) _|_ /   )  //       |      \\     _\\");
-                System.out.println("    ( // /) '/,_ _ _/  ( ; -.    |    _ _\\.-~        .-~~~^-. ");
-                System.out.println("  (( / / )) ,-{        _      `-.|.-~-.           .~         `.");
-                System.out.println(" (( // / ))  '/\\      /                 ~-. _ .-~      .-~^-.  \\");
-                System.out.println(" (( /// ))      `.   {            }                   /      \\  \\");
-                System.out.println("  (( / ))     .----~-\\.        \\-'                 .~         \\  `. \\^-.");
-                System.out.println("             ///.----..>        \\             _ -~             `.  ^-`  ^-_");
-                System.out.println("               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~");
-                System.out.println("                                                                  /.-~\\");
+        System.out.println("       \\    |\\___/|      /   \\//  \\\\");
+        System.out.println("            /0  0  \\__  /    //  | \\ \\    ");
+        System.out.println("           /     /  \\/_/    //   |  \\  \\  ");
+        System.out.println("           @_^_@'/   \\/_   //    |   \\   \\ ");
+        System.out.println("           //_^_/     \\/_ //     |    \\    \\");
+        System.out.println("        ( //) |        \\///      |     \\     \\");
+        System.out.println("      ( / /) _|_ /   )  //       |      \\     _\\");
+        System.out.println("    ( // /) '/,_ _ _/  ( ; -.    |    _ _\\.-~        .-~~~^-. ");
+        System.out.println("  (( / / )) ,-{        _      `-.|.-~-.           .~         `.");
+        System.out.println(" (( // / ))  '/\\      /                 ~-. _ .-~      .-~^-.  \\");
+        System.out.println(" (( /// ))      `.   {            }                   /      \\  \\");
+        System.out.println("  (( / ))     .----~-\\.        \\-'                 .~         \\  `. \\^-.");
+        System.out.println("             ///.----..>        \\             _ -~             `.  ^-`  ^-_");
+        System.out.println("               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~");
+        System.out.println("                                                                  /.-~\\");
     }
 }
