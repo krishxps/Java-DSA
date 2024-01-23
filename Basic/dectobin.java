@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class dectobin {
     public static void main(String[] args) {
-        System.out.println(decToBin(1023));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter n: ");
+        System.out.println(decToBin(sc.nextInt()));
+        sc.close();
     }
     
     public static long decToBin(int n){
