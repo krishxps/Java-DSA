@@ -1,8 +1,28 @@
 public class advancePattern {
     public static void main(String[] args) {
         // frame(5,7);
-        invetedNum(5);
+        // inveted(5);
+        // invetedNum(5);
+        floidTriangle(5);
     }
+
+    public static void floidTriangle(int line){
+        // OUTPUT: (5)
+        // 1 
+        // 2 3 
+        // 4 5 6 
+        // 7 8 9 10 
+        // 11 12 13 14 15 
+
+        int counter = 0; // TO TRACK PRINT NUMBER
+        for (int i = 0; i < line; i++) {
+            for (int j = 0; j < (i + 1); j++) {
+                System.out.print(++counter + " "); // ++ Will Update number before print
+            }
+            System.out.println();
+        }
+    }
+
     public static void invetedNum(int line){
         // OUTPUT: (5)
         // 12345
