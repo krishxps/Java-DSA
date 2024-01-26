@@ -3,7 +3,24 @@ public class advancePattern {
         // frame(5,7);
         // inveted(5);
         // invetedNum(5);
-        floidTriangle(5);
+        // floidTriangle(5);
+        zeroOneTriangle(5);
+    }
+
+    public static void zeroOneTriangle(int line) {
+        Boolean idx = true;
+        for (int i = 1; i <= line; i++) {
+            for (int j = 1; j <= i; j++) {
+                if(idx){
+                    System.out.print("1 ");
+                    idx = !idx;
+                }else{
+                    System.out.print("0 ");
+                    idx = !idx;
+                }
+            }
+            System.out.println();
+        }
     }
 
     public static void floidTriangle(int line){
