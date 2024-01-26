@@ -1,7 +1,21 @@
 public class advancePattern {
     public static void main(String[] args) {
         // frame(5,7);
-        inveted(5);
+        invetedNum(5);
+    }
+    public static void invetedNum(int line){
+        // OUTPUT: (5)
+        // 12345
+        // 1234
+        // 123
+        // 12
+        // 1
+        for (int i = 0; i < line; i++) {
+            for (int j = 0 ; j < line - i; j++) {
+                System.out.print(j + 1);
+            }
+            System.out.println();
+        }
     }
 
     public static void inveted(int line){
