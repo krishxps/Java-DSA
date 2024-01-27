@@ -6,7 +6,35 @@ public class advancePattern {
         // floidTriangle(5);
         // zeroOneTriangle(5);
         // butterfly(5);
-        solidRhombus(5);
+        // solidRhombus(10);
+        hollowRhombus(5);
+    }
+
+    public static void hollowRhombus(int number) { 
+        // OUTPUT: (5)
+        //     *****
+        //    *   *
+        //   *   *
+        //  *   *
+        // *****
+        for (int i = 1 ; i <= number; i++) {
+            for (int j = 0; j < number - i; j++) {
+                System.out.print(" ");
+            }
+            if(i == 1 || i == number){
+                for (int j = 1; j <= number; j++) {
+                    System.out.print("*");
+                }
+            }
+            else{
+                System.out.print("*");
+                for (int j = 1; j < (number - 1); j++) {
+                System.out.print(" ");
+                }
+                System.out.print("*");
+            }   
+            System.out.println();
+        }
     }
 
     public static void solidRhombus(int number) {
