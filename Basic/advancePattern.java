@@ -5,7 +5,86 @@ public class advancePattern {
         // invetedNum(5);
         // floidTriangle(5);
         // zeroOneTriangle(5);
-        butterfly(5);
+        // butterfly(5);
+        // solidRhombus(10);
+        // hollowRhombus(5);
+        dimond(5);
+    }
+
+    public static void dimond(int number) {
+        //OUTPUT: (5)
+        //     *
+        //    ***
+        //   *****
+        //  *******
+        // *********
+        //  *******
+        //   *****
+        //    ***
+        //     *
+        for (int i = 1; i <= number; i++) { // Upper Half
+            for (int j = 1; j <= (number - i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= (2 * i) - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = number - 1; i >= 0; i--) { // Second Half
+            for (int j = 1; j <= (number - i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= (2 * i) - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void hollowRhombus(int number) { 
+        // OUTPUT: (5)
+        //     *****
+        //    *   *
+        //   *   *
+        //  *   *
+        // *****
+        for (int i = 1 ; i <= number; i++) {
+            for (int j = 0; j < number - i; j++) {
+                System.out.print(" ");
+            }
+            if(i == 1 || i == number){
+                for (int j = 1; j <= number; j++) {
+                    System.out.print("*");
+                }
+            }
+            else{
+                System.out.print("*");
+                for (int j = 1; j < (number - 1); j++) {
+                System.out.print(" ");
+                }
+                System.out.print("*");
+            }   
+            System.out.println();
+        }
+    }
+
+    public static void solidRhombus(int number) {
+        //OUTPUT: (5)
+        //         * * * * * 
+        //       * * * * * 
+        //     * * * * * 
+        //   * * * * * 
+        // * * * * * 
+        for (int i = 1 ; i <= number; i++) {
+            for (int j = 0; j < number - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= number; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 
     public static void butterfly(int number) {
@@ -45,7 +124,14 @@ public class advancePattern {
             System.out.println();
         }
     }
+
     public static void zeroOneTriangle(int line) {
+        // OUTPUT: (5)
+        // 1 
+        // 0 1 
+        // 0 1 0 
+        // 1 0 1 0 
+        // 1 0 1 0 1 
         Boolean idx = true;
         for (int i = 1; i <= line; i++) {
             for (int j = 1; j <= i; j++) {
