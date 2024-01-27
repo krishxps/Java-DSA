@@ -7,7 +7,39 @@ public class advancePattern {
         // zeroOneTriangle(5);
         // butterfly(5);
         // solidRhombus(10);
-        hollowRhombus(5);
+        // hollowRhombus(5);
+        dimond(5);
+    }
+
+    public static void dimond(int number) {
+        //OUTPUT: (5)
+        //     *
+        //    ***
+        //   *****
+        //  *******
+        // *********
+        //  *******
+        //   *****
+        //    ***
+        //     *
+        for (int i = 1; i <= number; i++) { // Upper Half
+            for (int j = 1; j <= (number - i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= (2 * i) - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = number - 1; i >= 0; i--) { // Second Half
+            for (int j = 1; j <= (number - i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= (2 * i) - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 
     public static void hollowRhombus(int number) { 
