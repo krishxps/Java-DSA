@@ -4,9 +4,47 @@ public class advancePattern {
         // inveted(5);
         // invetedNum(5);
         // floidTriangle(5);
-        zeroOneTriangle(5);
+        // zeroOneTriangle(5);
+        butterfly(5);
     }
 
+    public static void butterfly(int number) {
+        // OUTPUT: (5)
+        // *                 * 
+        // * *             * * 
+        // * * *         * * * 
+        // * * * *     * * * * 
+        // * * * * * * * * * * 
+        // * * * * * * * * * * 
+        // * * * *     * * * * 
+        // * * *         * * * 
+        // * *             * *
+        // *                 *
+        for (int i = 1; i <= number; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            for (int j = 0; j < (2 * (number - i)); j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i = number ; i > 0 ; i--){
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            for (int j = 0; j < (2 * (number - i)); j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
     public static void zeroOneTriangle(int line) {
         Boolean idx = true;
         for (int i = 1; i <= line; i++) {
