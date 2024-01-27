@@ -5,7 +5,26 @@ public class advancePattern {
         // invetedNum(5);
         // floidTriangle(5);
         // zeroOneTriangle(5);
-        butterfly(5);
+        // butterfly(5);
+        solidRhombus(5);
+    }
+
+    public static void solidRhombus(int number) {
+        //OUTPUT: (5)
+        //         * * * * * 
+        //       * * * * * 
+        //     * * * * * 
+        //   * * * * * 
+        // * * * * * 
+        for (int i = 1 ; i <= number; i++) {
+            for (int j = 0; j < number - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= number; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 
     public static void butterfly(int number) {
@@ -45,7 +64,14 @@ public class advancePattern {
             System.out.println();
         }
     }
+
     public static void zeroOneTriangle(int line) {
+        // OUTPUT: (5)
+        // 1 
+        // 0 1 
+        // 0 1 0 
+        // 1 0 1 0 
+        // 1 0 1 0 1 
         Boolean idx = true;
         for (int i = 1; i <= line; i++) {
             for (int j = 1; j <= i; j++) {
