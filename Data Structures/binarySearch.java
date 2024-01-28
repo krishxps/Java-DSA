@@ -13,7 +13,7 @@ public class binarySearch {
 
         // Until Start is smaller than end
         while (start <= end) {
-
+ 
             // Finding mid to compare 
             int mid = (start + end) / 2;
 
