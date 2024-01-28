@@ -1,7 +1,8 @@
 public class arr {
     public static void main(String[] args) {
-        int marks[] = new int[2];
-        marks[1] = 1;
-        System.out.println(marks[1]);
+        int marks[] = new int[10];
+        for (int i = 0; i < marks.length; i++) {
+            System.out.print(marks[i]+ " ");
+        }
     }
 }
