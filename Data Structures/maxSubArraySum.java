@@ -1,44 +1,46 @@
 public class maxSubArraySum {
     public static void main(String[] args) {
-        int numbers[] = { 1, -2, 6, -1, 3 };
-        int nums[] = { -2 , -3 , 4, -1, -2 , 1 , 5 , -3};
-        int nags[] = { -2 , -3 , -4, -1};
+        // int numbers[] = { 1, -2, 6, -1, 3 };
+        // int nums[] = { -2 , -3 , 4, -1, -2 , 1 , 5 , -3};
+        int nags[] = { -2, -3, -4, -1 };
         // subArr(numbers);
         // prefixSum(numbers);
         kadanesAlgo(nags);
     }
-    // tc : O(n) ,  space complexity is O(1),
+
     public static void kadanesAlgo(int nums[]) {
         int cs = 0;
         int ms = Integer.MIN_VALUE;
 
-        //For Nagative Numbers calculations
-        int biggestNagative = ms;
-        int allnagative = 0;
-        // Check if all nums are nagative
-        for (int i = 0; i < nums.length && allnagative != 1; i++) {
-            if(nums[i] > 0){
-                allnagative = 1;
-            }else if(biggestNagative < nums[i]){
-                biggestNagative = nums[i];
+        // For Negative Numbers calculations
+        int largestNegative = ms;
+        int allNegative = 1;
+
+        // Check if all nums are negative
+        for (int i = 0; i < nums.length && allNegative == 1; i++) {
+            if (nums[i] >= 0) {
+                allNegative = 0;
+            } else if (largestNegative < nums[i]) {
+                largestNegative = nums[i];
             }
         }
-        
-        if(allnagative == 1){
+
+        if (allNegative == 1) {
+            ms = largestNegative;
+        } else {
             for (int i = 0; i < nums.length; i++) {
                 cs += nums[i];
-                if(cs < 0){
+                if (cs < 0) {
                     cs = 0;
                 }
-                ms = Math.max(cs,ms);
+                ms = Math.max(cs, ms);
             }
-            System.out.println("out max subarrays sum is: "+ms);
-        }else{
-            System.out.println("out max subarrays sum is all nagative : "+ biggestNagative);
         }
+
+        System.out.println("Out max subarray sum is: " + ms);
     }
 
-    // Time complexity O(n^2) OPTIMIZED than subArr 
+    // Time complexity O(n^2) OPTIMIZED than subArr
     public static void prefixSum(int numbers[]) {
         int maximum = Integer.MIN_VALUE;
         int n = numbers.length;
@@ -54,15 +56,14 @@ public class maxSubArraySum {
             for (int j = i; j < numbers.length; j++) {
                 int end = j;
                 int currSum = start == 0 ? prefixSum[end] : prefixSum[end] - prefixSum[start - 1];
-                
-                if (maximum < currSum){
+
+                if (maximum < currSum) {
                     maximum = currSum;
                 }
             }
         }
-        System.out.println("MAX: "+ maximum);
+        System.out.println("MAX: " + maximum);
     }
-    
 
     // Time complexity O(n^3), which can be optimized further
     public static void subArr(int nums[]) {
