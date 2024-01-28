@@ -1,7 +1,9 @@
 public class binarySearch {
     public static void main(String[] args) {
-        int nums[] = {2,4,6,8,10,12,14};
-        System.out.println("Index of key (-1 if not found): "+ Binary(nums, 14));
+        int numbers[] = {2,4,6,8,10,12,14};
+        int key = 2;
+        int idx = Binary(numbers, key);
+        System.out.println("Index of key (-1 if not found): "+ idx + ".\nNUMBER ENTERED IS: "+ numbers[idx] );
     }
 
     // Prerequisite : Sorted Array
