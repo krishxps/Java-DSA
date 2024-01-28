@@ -1,7 +1,13 @@
+import java.util.Scanner;
+
 public class linearSearch {
     public static void main(String[] args) {
         String menu[] = {"dosa","bhaji","pav","bhaji pav","samosa", "chineese noodles","dal bhat", "kadhi", "chana"};
-        String key = "pav";
+        Scanner sc = new Scanner(System.in);
+        System.out.print("ENTER NAME: ");
+        String key = sc.nextLine();
+        sc.close();
+
         int index = linear(menu,key);
         if(index != -1){
             System.out.println("Found " + key + " at " + index + " Index.(TOTAL: "+ menu.length+")");
@@ -13,7 +19,7 @@ public class linearSearch {
     private static int linear(String[] menu, String key) {
         int idx = -1, loopFlag = 1;
         for (int i = 0; i < menu.length && loopFlag == 1; i++) {
-            if(menu[i] == key){
+            if(menu[i].equals(key)){
                 idx = i;
                 loopFlag++;
             }
