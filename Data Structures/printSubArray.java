@@ -9,10 +9,12 @@ public class printSubArray {
             int start = i;
             for (int j = i; j < nums.length; j++) {
                 int end = j;
+                int subsum = 0;
                 for (int k = start; k <= end; k++) {
                     System.out.print(nums[k]+ " ");
+                    subsum += nums[k]; 
                 }
-                System.out.println();
+                System.out.println("| Sum: " + subsum);
             }
             System.out.println();
         }
