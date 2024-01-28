@@ -5,6 +5,12 @@ public class pairs {
     }
     
     public static void printPairs(int num[]) {
+        // total pairs = n (n - 1) / 2 
+        
+        // if n = 5 then 5(5-1) / 2 
+        //             = 5(4) / 2 
+        //             = 20 / 2 = 10
+
         int totalPair = 0;
         for (int i = 0; i < num.length; i++) {
             int current = num[i];
