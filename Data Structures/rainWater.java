@@ -12,7 +12,7 @@ public class rainWater {
      * water level = min(left max bound,right max bound)
      * trapped water = water level - walls[i]  
      */
-    public static int water(int walls[]) {
+    public static int water(int walls[]) { // O(n)
 
         // calculate left max boundary - array
         int n = walls.length;
