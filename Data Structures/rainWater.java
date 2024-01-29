@@ -18,7 +18,7 @@ public class rainWater {
         int n = walls.length;
         int left[] = new int[n];
         left[0] = walls[0];
-        for (int i = 1; i < left.length; i++) {
+        for (int i = 1; i < n; i++) {
             left[i] = Math.max(left[i - 1], walls[i]);
         }
 
