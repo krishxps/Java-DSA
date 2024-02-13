@@ -10,17 +10,20 @@ public class bubbleSort {
         System.out.println();
     }
 
-    private static void bubble(int[] arr, int length) {
+    // O^n2 
+    private static void bubble(int[] arr, int length) 
+    {
         int size = length;
-        for (int idx = 1; idx < length; idx++) {
-            for (int index = 1; index < size; index++) {
+        for (int idx = 0; idx < length; idx++) 
+        {
+            for (int index = 1; index < size - idx; index++) 
+            {
                 if (arr[index - 1] > arr[index]) {
                     int temp = arr[index - 1];
                     arr[index - 1] = arr[index];
                     arr[index] = temp;
                 }
             }
-            size--;
         }
     }
 }
