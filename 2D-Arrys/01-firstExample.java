@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class firstTwoDArrayExample {
+public class 01-firstExample {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class firstTwoDArrayExample {
 
         get(num,studentAmt,subAmt,sc);
         print(num,studentAmt,subAmt);
-        
+        srch(num, studentAmt, subAmt, 21);
         sc.close();
     }
     public static void get(int[][] num,int studentAmt , int subAmt,Scanner sc) {
@@ -34,5 +34,18 @@ public class firstTwoDArrayExample {
             }
             System.out.println();
         }
+    }
+
+    public static boolean srch(int[][] num,int studentAmt , int subAmt,int key) {
+        for (int i = 0; i < studentAmt; i++) {
+            for (int j = 0; j < subAmt; j++) {
+                if(num[i][j] == key){
+                    System.out.println("Found Number at cell ("+i+","+j+")");
+                    return true;
+                }
+            }
+        }
+        System.out.println("Key Not Find");
+        return false;
     }
 }
